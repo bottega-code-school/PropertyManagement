@@ -4,19 +4,17 @@ import { Switch, Route } from 'react-router-dom';
 import Signin from './components/signin';
 import Signup from './components/signup';
 
+import Layout from './components/HOC/layout'
+
 class Routes extends Component {
     render() {
         return (
-            <div>
-                <header>
-                    <h1>welcome to the HOA manager</h1>
-                    <h2>please login to continue</h2>
-                </header>
+            <Layout>
                 <Switch>
                     <Route path="/signIn" component={Signin}></Route>
                     <Route path="/signUp" component={Signup}></Route>
                 </Switch>
-            </div>
+            </Layout>
         )
     }
 }
