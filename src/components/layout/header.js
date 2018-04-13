@@ -4,8 +4,8 @@ class Header extends Component {
     render() {
         return (
             <header>
-                <h1>welcome to the HOA manager</h1>
-                <h2>please login to continue</h2>
+                <div className="header__title">welcome to the HOA manager</div>
+                <div className="header__subtitle">please login to continue</div>
             </header>
         )
     }
