@@ -7,19 +7,15 @@ import TitledInput from '../TitledInput';
 
 import { Link } from 'react-router-dom';
 
-class Signin extends Component {
+class Reset extends Component {
     render() {
         return (
             <form className="signin-form">
                 <TitledInput type="text" placeholder='Enter Email' title='Email'/>
-                <TitledInput type="password" placeholder='Enter Password' title='Password'/>
-                <TitledInput type="submit" value="Login"/>
+                <TitledInput type="submit" value="Reset Password"/>
                 <div className="signin-form__button-container">
-                    <Link to="/reset">
-                        <span className="button-secondary">Forgot Password</span>
-                    </Link>
-                    <Link to="/signup">
-                        <span className="button-secondary">Not a member? Register Here</span>
+                    <Link to="/signin">
+                        <span className="button-secondary">Login</span>
                     </Link>
                 </div>
             </form>
@@ -27,4 +23,4 @@ class Signin extends Component {
     }
 }
 
-export default addHeaderBorder(addTitle(Signin, 'Login'));
+export default addHeaderBorder(addTitle(Reset, 'Reset Password'));
