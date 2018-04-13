@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import addHeaderBorder from '../HOC/addHeaderBorder';
+import addTitle from '../HOC/addTitle';
 
 class Signup extends Component {
     render() {
@@ -11,4 +12,5 @@ class Signup extends Component {
     }
 }
 
-export default addHeaderBorder(Signup);
+export default addHeaderBorder(addTitle(Signup, 'New User'));
+

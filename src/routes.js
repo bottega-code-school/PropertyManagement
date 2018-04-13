@@ -11,6 +11,7 @@ class Routes extends Component {
         return (
             <Layout>
                 <Switch>
+                    <Route path="/" exact component={Signin}></Route>
                     <Route path="/signIn" component={Signin}></Route>
                     <Route path="/signUp" component={Signup}></Route>
                 </Switch>
