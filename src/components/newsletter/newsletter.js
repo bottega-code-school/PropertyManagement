@@ -12,6 +12,8 @@ class Newsletter extends Component {
                 <div className="newsletter__sidebar">
                     {/* box component */}
                     {/* archive component */}
+
+
                 </div>
                 <div className="newsletter__body-content">
                     <NewsletterBodyContent/>

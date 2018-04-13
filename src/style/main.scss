@@ -188,6 +188,23 @@ input {
 	background-color: #FFFFFF;
 }
 
+.newsletter {
+
+    display: flex;
+    margin-top: 47px;
+
+    .newsletter__sidebar {
+        margin-right: 20px;
+        background-color: skyblue;
+        width: 161px;
+        height: 100%;
+    }
+
+    .newsletter__body-content {
+        width: 961px;
+    }
+    
+}
 // addBodyContainer.scss
 //
 
