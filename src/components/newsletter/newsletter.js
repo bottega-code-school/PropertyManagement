@@ -4,6 +4,7 @@ import addHeaderNav from '../HOC/addHeaderNav';
 
 import NewsletterBodyContent from './newsletterBodyContent';
 import InfoBox from '../infoBox';
+import NewsletterArchive from './newsletterArchive';
 
 class Newsletter extends Component {
     render() {
@@ -11,7 +12,7 @@ class Newsletter extends Component {
             <div className="newsletter">
                 <div className="newsletter__sidebar">
                     <InfoBox/>
-                    {/* archive component */}
+                    <NewsletterArchive/>
 
 
                 </div>
