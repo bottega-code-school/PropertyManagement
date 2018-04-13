@@ -16,6 +16,8 @@ class Routes extends Component {
                     <Route path="/signIn" component={Signin}></Route>
                     <Route path="/signUp" component={Signup}></Route>
                     <Route path="/reset" component={Reset}></Route>
+
+                    
                 </Switch>
             </Layout>
         )
