@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import addHeaderBorder from '../HOC/addHeaderBorder';
 
 class Signup extends Component {
     render() {
@@ -10,4 +11,4 @@ class Signup extends Component {
     }
 }
 
-export default Signup;
+export default addHeaderBorder(Signup);

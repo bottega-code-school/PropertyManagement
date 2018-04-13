@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import addHeaderBorder from '../HOC/addHeaderBorder';
 
 class Signin extends Component {
     render() {
         return (
             <div>
-                Signin form 
+                SIGN IN form goes here
             </div>
         )
     }
 }
 
-export default Signin;
+export default addHeaderBorder(Signin);
