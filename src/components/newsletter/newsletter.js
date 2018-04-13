@@ -3,14 +3,14 @@ import React, { Component } from 'react';
 import addHeaderNav from '../HOC/addHeaderNav';
 
 import NewsletterBodyContent from './newsletterBodyContent';
-
+import InfoBox from '../infoBox';
 
 class Newsletter extends Component {
     render() {
         return (
             <div className="newsletter">
                 <div className="newsletter__sidebar">
-                    {/* box component */}
+                    <InfoBox/>
                     {/* archive component */}
 
 

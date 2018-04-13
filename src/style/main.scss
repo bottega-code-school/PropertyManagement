@@ -195,7 +195,6 @@ input {
 
     .newsletter__sidebar {
         margin-right: 20px;
-        background-color: skyblue;
         width: 161px;
         height: 100%;
     }
@@ -203,7 +202,7 @@ input {
     .newsletter__body-content {
         width: 961px;
     }
-    
+
 }
 // addBodyContainer.scss
 //
@@ -235,3 +234,34 @@ input {
 }
 
 // newsletterbodycontent.scss
+
+
+
+//infobox.scss
+
+.info-box {
+    box-sizing: border-box;
+    height: 161px;
+    width: 161px;
+    border: 1px solid #BA0000;
+    border-radius: 5px;
+
+    color: #BA0000;
+    font-weight: bold;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .info-box__day {
+        font-size: 65px;
+        line-height: 81px;
+        margin-bottom: 8px;
+    }
+    .info-box__year {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+//infobox.scss
