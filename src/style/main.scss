@@ -68,20 +68,43 @@ input {
     height: 40px;
 }
 
-.titled-input input {
-    width: 500px;
-    padding: 12px 22px;
-    color: #4D4D4D;
-    font-size: 14px;
-    line-height: 17px;
-    margin: 20px 0;
+.titled-input {
+    input {
+        width: 500px;
+        padding: 12px 22px;
+        color: #4D4D4D;
+        font-size: 14px;
+        line-height: 17px;
+        margin: 20px 0;
+    }
 }
 
 .signin-form {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-top: 77px;
 }
+
+.titled-input input[type=submit] {
+    height: 40px;	
+    width: 216.67px;
+    border-radius: 20px;	
+    background-color: #BA0000;
+
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+
+    padding-top: 4px;
+    padding-bottom: 8px;
+
+    margin-top: 87px;
+}
+
+
 
 
 
