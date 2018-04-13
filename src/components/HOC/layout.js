@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
+import Header from '../layout/header';
+import Footer from '../layout/footer';
 
 class Layout extends Component {
     render() {
         return (
             <div>
-                <header>
-                    <h1>welcome to the HOA manager</h1>
-                    <h2>please login to continue</h2>
-                </header>
+                <Header/>
                 {this.props.children}
-                footer...
+                <Footer/>
             </div>
         )
     }

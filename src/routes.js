@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Signin from './components/signin';
-import Signup from './components/signup';
+import Signin from './components/auth/signin';
+import Signup from './components/auth/signup';
 
 import Layout from './components/HOC/layout'
 
