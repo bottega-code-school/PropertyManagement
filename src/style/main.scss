@@ -1,10 +1,10 @@
 body {
     margin: 39px 140px;
+    font-family: "Encode Sans";
 }
 
 .header__title {
     color: #4D4D4D;
-    font-family: "Encode Sans";
     font-size: 24px;
     font-weight: 500;	
     line-height: 30px;
@@ -36,13 +36,54 @@ body {
 // addTitle.scss
 .add-title__title {
     color: #4D4D4D;
-    font-family: "Encode Sans";
     font-size: 16px;
-    font-weight: 500;	
+    font-weight: bold;	
     line-height: 20px;
 
     border-bottom: 1px solid #e6e6e6;
     padding-bottom: 12px;
 }
 // addTitle.scss
+//
+
+//
+// TitledInput.scss
+
+.titled-input {
+    display: flex;
+    align-items: center;
+}
+
+.titled-input__title {
+    color: #BA0000;	
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 23px;
+    width: 129px;
+}
+
+input {
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.titled-input input {
+    width: 500px;
+    padding: 12px 22px;
+    color: #4D4D4D;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 20px 0;
+}
+
+.signin-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+// TitledInput.scss
 //
