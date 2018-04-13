@@ -128,3 +128,49 @@ input {
 
 // signin.scss
 //
+
+//
+// addHeaderNav.scss
+
+.add-nav {
+    .add-nav__items {
+        padding-bottom: 13px;
+        border-bottom: 1px solid #E6E6E6;
+        display: flex;
+        justify-content: center;
+
+        .link {
+            margin: 0px 23px;
+            // text-decoration-color: #BA0000;
+            text-decoration-color: transparent;
+        }
+        
+        .nav-selected {
+            .add-nav__text {
+                color: #BA0000;
+                border-bottom: 3px solid #BA0000;
+            }
+        }
+
+        .add-nav__text {
+            border-bottom: 0px solid transparent;
+            padding-bottom: 13px;
+            color: #4D4D4D;
+            font-size: 16px;
+            font-weight: bold;	
+            line-height: 20px;	
+            text-align: center;
+            transition: all .3s ease;
+
+            &:hover {
+                color: #BA0000;
+                border-bottom: 2px solid #BA0000;
+            }
+        }
+
+
+    }
+}
+
+// addHeaderNav.scss
+//

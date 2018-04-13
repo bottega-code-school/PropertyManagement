@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import addHeaderNav from '../HOC/addHeaderNav';
+
 class Requests extends Component {
     render() {
         return (
@@ -10,4 +12,4 @@ class Requests extends Component {
     }
 }
 
-export default Requests;
+export default addHeaderNav(Requests, 'requests');

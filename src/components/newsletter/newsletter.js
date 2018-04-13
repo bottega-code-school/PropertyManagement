@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import addHeaderNav from '../HOC/addHeaderNav';
+
 class Newsletter extends Component {
     render() {
         return (
@@ -10,4 +12,4 @@ class Newsletter extends Component {
     }
 }
 
-export default Newsletter;
+export default addHeaderNav(Newsletter, 'newsletter');
