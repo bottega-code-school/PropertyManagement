@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import newsletterReducer frmo './newsletter';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  newsletter: newsletterReducer
 });
 
 export default rootReducer;
