@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import newsletterReducer frmo './newsletter';
+import newsletterReducer from './newsletter';
 
 const rootReducer = combineReducers({
   newsletter: newsletterReducer

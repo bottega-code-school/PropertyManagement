@@ -5,10 +5,10 @@ class NewsletterArchiveItem extends Component {
         return (
             <div className="archive-item">
                 <div className="archive-item__title">
-                    Happy Holidays!
+                    {this.props.item.title}
                 </div>
                 <div className="archive-item__date">
-                    09/09/2030
+                    {this.props.item.date}
                 </div>
             </div>
         )

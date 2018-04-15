@@ -1,4 +1,4 @@
-import { FETCH_NEWSLETTERS } from '../actions';
+import { FETCH_NEWSLETTERS } from '../actions/types';
 
 const initalState = {
     archive: [],

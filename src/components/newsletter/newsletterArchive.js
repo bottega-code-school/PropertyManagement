@@ -1,7 +1,15 @@
 import React, { Component } from 'react'
 import NewsletterArchiveItem from './newsletterArchiveItem';
 
+import { connect, dispatch } from 'react-redux';
+import { fetchNewsletters } from '../../actions/index'
+
 class NewsletterArchive extends Component {
+
+    componentDidMount() {
+        this.props.fetchNewsletters()
+    }
+
     render() {
         return (
             <div className="newsletter-archive">
@@ -9,13 +17,30 @@ class NewsletterArchive extends Component {
                     Archive
                 </div>
                 <ul>
-                    <NewsletterArchiveItem/>
-                    <NewsletterArchiveItem/>
-                    <NewsletterArchiveItem/>
+                    {
+                        this.props.archive.map((object, index) => {
+                            return <NewsletterArchiveItem key={index} item={object} />
+                        })
+                    }
                 </ul>
             </div>
         )
     }
 }
 
-export default NewsletterArchive;
+
+function mapStateToProps(state) {
+    return {
+        archive: state.newsletter.archive
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        fetchNewsletters:() => {
+            dispatch(fetchNewsletters())
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(NewsletterArchive);
